@@ -1,0 +1,53 @@
+/* --------- COLOR SCHEME ---------
+
+dark teal: #0b5563
+dark red: #a3333d
+
+*/
+
+/************ SITE WIDE ************/
+* {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/************* HEADER *************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #0b5563;
+    font-weight:700;
+}
+
+/************* HAMBURGER NAV *************/
+.hamburger {
+    background: none;
+    border: none;
+    color: #0b5563;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    
+}
