@@ -1,7 +1,14 @@
-// HAMBURGER MENU
+// HAMBURGER MENU & NAV BAR
 
-const navbutton = document.querySelector('#ham-button');
+const navButton = document.querySelector('#ham-button');
+const navBar = document.querySelector('#nav-bar');
 
-navbutton.addEventListener('click', () => {
-    navbutton.classList.toggle('show');
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
 });
+
+
+
+
+

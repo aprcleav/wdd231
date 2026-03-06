@@ -3,14 +3,27 @@
     header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
-        padding: 10px 0 10px 10px;
     }
 
     header {
         grid-template-columns: 24px auto;
+        padding: 10px;
     }
 
     .hamburger {
         display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #EEEEFF;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
     }
 }

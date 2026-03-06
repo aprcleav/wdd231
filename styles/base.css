@@ -2,7 +2,9 @@
 
 dark teal: #0b5563
 dark red: #a3333d
-
+light purple: #EEEEFF
+dark purple: #2B193D
+rosey color: #C5979D
 */
 
 /************ SITE WIDE ************/
@@ -17,7 +19,7 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 5px 0 5px 10px;
     align-items: center;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px #EEEEFF;
     column-gap: 8px;
     
 }
@@ -30,7 +32,7 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color: #0b5563;
+    color: #2B193D;
     font-weight:700;
 }
 
@@ -38,7 +40,7 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    color: #0b5563;
+    color: #2B193D;
     cursor: pointer;
 }
 
@@ -50,4 +52,70 @@ header span {
 .hamburger.show::before {
     content: "\00D7";
     
+}
+
+/************** NAV BAR ****************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #2B193D;
+    text-decoration: none;
+    border-bottom: solid 1px #EEEEFF;
+}
+
+.navigation li.current {
+    background-color: #EEEEFF;
+}
+
+.navigation a:hover {
+    background-color: #C5979D;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+/************** FOOTER ****************/
+footer {
+    background-color: #EEEEFF;
+    padding: 1rem 10px;
+    text-align: center;
+
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+.social a:hover {
+    background-color: #C5979D;
 }
