@@ -1,8 +1,7 @@
 /* --------- COLOR SCHEME ---------*/
 :root {
     --deep-teal: #264a4d;
-    --dusty-mauve: #ddbfc3;
-    --dark-red: #8f3642;
+    --dusty-mauve: #e9dbdd;
     --azure-mist: #d6e5e3;
     --shadow-grey: #34252f;
     --backgrounds-borders: #f1f3f3;
@@ -137,7 +136,7 @@ h2 {
 .course-menu a {
     display: block;
     text-decoration: none;
-    background-color: var(--dark-red);
+    background-color: var(--shadow-grey);
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -146,8 +145,7 @@ h2 {
 }
 
 .course-menu a:hover {
-    background-color: var(--dusty-mauve);
-    color: black;
+    background-color: var(--deep-teal);
 }
 
 .card {
@@ -165,6 +163,10 @@ h2 {
 
 .courses p {
     text-align: center;
+}
+
+.incomplete {
+    background-color: var(--dusty-mauve);
 }
 
 /************** FOOTER ****************/

@@ -110,30 +110,30 @@ function createCourseCard(filteredCourses)
         let subject = document.createElement("p");
         let number = document.createElement("p");
         let completed = document.createElement("p");
-        let credits = courses.credits;
         
         subject.textContent = course.subject;
         number.textContent = course.number;
+
         if (course.completed == true) {
             completed.textContent = "✅";
+            card.setAttribute("class", "card");
         }
         else {
             completed.textContent = "";
+            card.setAttribute("class", "card incomplete");
         }
-
-        card.setAttribute("class", "card");
         
         card.appendChild(completed);
         card.appendChild(subject);
         card.appendChild(number);
 
         // Uses reduce function to get the total number of credits for the filtered courses
-        const total = filteredCourses.reduce((sum, c) => sum + c.credits, 0);
+        const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
         document.querySelector('#credit-count').textContent = total;
 
         document.querySelector(".course-grid").appendChild(card);
 
-    })
+    });
 }
 
 
