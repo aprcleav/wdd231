@@ -4,7 +4,6 @@ const navButton = document.querySelector('#ham-button');
 const navBar = document.querySelector('#nav-bar');
 const navLinks = document.querySelectorAll('#nav-bar a');
 
-// 
 navButton.addEventListener('click', () => {
     navButton.classList.toggle('show');
     navBar.classList.toggle('show');

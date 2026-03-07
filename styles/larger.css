@@ -18,7 +18,6 @@
 
     .navigation {
         display: block;
-        background-color: var(--deep-teal);
     }
 
     .navigation ul {

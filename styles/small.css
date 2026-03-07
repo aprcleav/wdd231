@@ -59,6 +59,7 @@ header span {
 /************** NAV BAR ****************/
 .navigation {
     display: none;
+    background-color: var(--deep-teal);
 }
 
 .navigation.show {
