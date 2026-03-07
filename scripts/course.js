@@ -1,3 +1,5 @@
+// Course List
+
 const courses = [
     {
         subject: 'CSE',
@@ -77,3 +79,63 @@ const courses = [
         completed: false
     }
 ]
+
+createCourseCard(courses);
+
+// Links menu items to filtered array cards
+const all = document.querySelector("#all");
+const cse = document.querySelector("#CSE");
+const wdd = document.querySelector("#WDD");
+
+
+all.addEventListener("click", () => {
+    createCourseCard(courses);
+});
+
+cse.addEventListener("click", () => {
+    createCourseCard(courses.filter(course => course.subject == "CSE"));
+});
+
+wdd.addEventListener("click", () => {
+    createCourseCard(courses.filter(course => course.subject == "WDD"));
+});
+
+// Creates and populates cards
+function createCourseCard(filteredCourses)
+{
+    document.querySelector(".course-grid").innerHTML = "";
+
+    filteredCourses.forEach(course => {
+        let card = document.createElement("section");
+        let subject = document.createElement("p");
+        let number = document.createElement("p");
+        let completed = document.createElement("p");
+        let credits = courses.credits;
+        
+        subject.textContent = course.subject;
+        number.textContent = course.number;
+        if (course.completed == true) {
+            completed.textContent = "✅";
+        }
+        else {
+            completed.textContent = "";
+        }
+
+        card.setAttribute("class", "card");
+        
+        card.appendChild(completed);
+        card.appendChild(subject);
+        card.appendChild(number);
+
+        // Uses reduce function to get the total number of credits for the filtered courses
+        const total = filteredCourses.reduce((sum, c) => sum + c.credits, 0);
+        document.querySelector('#credit-count').textContent = total;
+
+        document.querySelector(".course-grid").appendChild(card);
+
+    })
+}
+
+
+
+

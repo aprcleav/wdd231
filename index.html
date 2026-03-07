@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="#">Home</a></li>
-            <li class="current"><a href="#">Chamber Project</a></li>
+            <li><a href="#">Chamber Project</a></li>
             <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
@@ -45,16 +46,12 @@
         <section class="courses">
             <h2>Web Certificate Courses</h2>
             <div class="course-menu">
-                <a href="">All</a>
-                <a href="">CSE</a>
-                <a href="">WDD</a>
+                <a href="#" id="all">All</a>
+                <a href="#" id="CSE">CSE</a>
+                <a href="#" id="WDD">WDD</a>
             </div>
-            <div class="wdd">
-                <a href="">WDD 130</a>
-                <a href="">WDD 131</a>
-                <a href="">WDD 231</a>
-            </div>
-            <p>The total credits for the courses listed above is 6</p>
+            <p>The total credits for the courses listed below is <span id="credit-count"></span></p>
+            <div class="course-grid"></div>
         </section>
     </main>
     <footer>
@@ -64,7 +61,7 @@
             <a href="https://www.facebook.com/Aprcleav/"><img src="images/facebook.svg" alt="facebook" width="30" height="30"></a>
             <a href="https://x.com/Aprcleav"><img src="images/x.svg" alt="X" width="30" height="30"></a>
         </div>
-        <p>© <span id="currentyear"></span> April Cleaver | 🌲Washington, USA</p>
+        <p>© <span id="currentyear"></span> April Cleaver | Washington, USA</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 </body>

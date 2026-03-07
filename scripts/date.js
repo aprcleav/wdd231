@@ -1,5 +1,6 @@
 
-//Footer Date
+// Footer Date & Last Modified
+
 const year = document.querySelector("#currentyear");
 const today = new Date();
 

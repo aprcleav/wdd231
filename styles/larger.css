@@ -35,7 +35,6 @@
 
     .navigation a {
         border: none;
-        color: white;
     }
 
     /*************** Main **************/
@@ -65,14 +64,14 @@
         justify-content: space-around;
     }
 
-    .wdd {
-        display: flex;
-        justify-content: space-around;
-        margin: 10px 10px;
-    }
-
     .course-menu a {
         width: 100%;
         margin: 5px;
+    }
+
+    .course-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 5px;
     }
 }
