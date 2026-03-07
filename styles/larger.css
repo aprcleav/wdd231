@@ -1,11 +1,3 @@
-/* --------- COLOR SCHEME ---------*/
-:root {
-    --deep-teal: #264a4d;
-    --dusty-mauve: #ddbfc3;
-    --azure-mist: #d6e5e3;
-    --shadow-grey: #34252f;
-    --backgrounds-borders: #f1f3f3;
-}
 
 @media only screen and (min-width: 38rem) {
 
