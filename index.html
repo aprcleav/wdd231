@@ -3,37 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>April Cleaver - WDD231</title>
+    <meta name="description" content="April Cleaver's WDD 231 Home Page (BYU-Idaho)">
+    <meta name="author" content="April Cleaver">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/house-heart.svg" alt="site logo" width="512" height="512">
+        <img src="images/leaf.svg" alt="site logo" width="512" height="512">
         <span>April Cleaver</span>
         <button id="ham-button" class="hamburger" aria-label="navigation"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi! I'm April Cleaver. I live in the gloomy yet gorgeous Pacific Northwest with my family of five. My husband and I have been married for 15 years, and we have three sons ages 13, 11, and 7. I enjoy hiking, drawing, exercise, and spending time with family. I'm currently a student working towards a bachelor's degree in software development through BYU-Idaho. </p>
+        </section>
+        <section class="student-photo">
+            <h2>Student Photo</h2>
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/ac-small.webp">
+                <source media="(min-width: 400px)" srcset="images/ac-large.webp">
+                <img src="images/april-cleaver.webp" alt="April Cleaver and her husband Ryan" width="400" height="400">
+            </picture>
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-menu">
+                <a href="">All</a>
+                <a href="">CSE</a>
+                <a href="">WDD</a>
+            </div>
+            <div class="wdd">
+                <a href="">WDD 130</a>
+                <a href="">WDD 131</a>
+                <a href="">WDD 231</a>
+            </div>
+            <p>The total credits for the courses listed above is 6</p>
+        </section>
     </main>
     <footer>
         <div class="socials">
             <a href="https://github.com/aprcleav"><img src="images/github.svg" alt="github" width="30" height="30"></a>
             <a href="https://www.linkedin.com/in/aprcleaver/"><img src="images/linkedin.svg" alt="linkedin" width="30" height="30"></a>
-            <a href="https://www.instagram.com/ape.draws/"><img src="images/instagram.svg" alt="instagram" width="30" height="30"></a>
             <a href="https://www.facebook.com/Aprcleav/"><img src="images/facebook.svg" alt="facebook" width="30" height="30"></a>
+            <a href="https://x.com/Aprcleav"><img src="images/x.svg" alt="X" width="30" height="30"></a>
         </div>
-        <p>copyright symbol and current year</p>
-        <p>Last Modified</p>
+        <p>© <span id="currentyear"></span> April Cleaver | 🌲Washington, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
 </body>
 </html>

@@ -1,0 +1,206 @@
+/* --------- COLOR SCHEME ---------*/
+:root {
+    --deep-teal: #264a4d;
+    --dusty-mauve: #ddbfc3;
+    --dark-red: #8f3642;
+    --azure-mist: #d6e5e3;
+    --shadow-grey: #34252f;
+    --backgrounds-borders: #f1f3f3;
+}
+
+/************ SITE WIDE ************/
+* {
+    font-family: "Lexend", Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/************* HEADER *************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: center;
+    border-bottom: solid 1px var(--backgrounds-borders);
+    column-gap: 8px;
+    
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--shadow-grey);
+    font-weight:700;
+}
+
+/************* HAMBURGER NAV *************/
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--shadow-grey);
+    cursor: pointer;
+    font-family: Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    
+}
+
+/************** NAV BAR ****************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--deep-teal);
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px var(--backgrounds-borders);
+}
+
+.navigation li.current {
+    background-color: var(--dark-red);
+}
+
+.navigation a:hover {
+    background-color: var(--dusty-mauve);
+    color: black;
+}
+
+/************** MAIN ****************/
+
+h1 {
+    padding: 10px;
+    color: var(--shadow-grey);
+}
+
+h2 {
+    background-color: var(--shadow-grey);
+    color: white;
+    padding: 10px;
+}
+
+.about {
+    background-color: var(--backgrounds-borders);
+    padding-bottom: 10px;
+}
+
+.about p {
+    margin: 10px;
+    line-height: 1.4rem;;
+}
+
+.student-photo h2 {
+    margin-bottom: 0;
+}
+
+.student-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.courses {
+    background-color: var(--backgrounds-borders);
+    margin-bottom: 20px;
+}
+
+.course-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+.course-menu a {
+    display: block;
+    text-decoration: none;
+    background-color: var(--dark-red);
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    margin: 2%;
+}
+
+.course-menu a:hover {
+    background-color: var(--dusty-mauve);
+    color: black;
+}
+
+.wdd {
+    display: grid;
+    grid-gap: 10px;
+    margin: 20px 10px;
+}
+.wdd a {
+    padding: 10px;
+    background-color: var(--dusty-mauve);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.wdd a:hover {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+.courses p {
+    text-align: center;
+    padding: 10px;
+}
+/************** FOOTER ****************/
+footer {
+    background-color: var(--deep-teal);
+    padding: 1rem 10px;
+    text-align: center;
+
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.socials a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+.social a:hover {
+    border-bottom: solid 1px var(--deep-teal);
+}
+
+footer p {
+    color: white;
+}

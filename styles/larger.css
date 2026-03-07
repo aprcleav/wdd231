@@ -1,3 +1,12 @@
+/* --------- COLOR SCHEME ---------*/
+:root {
+    --deep-teal: #264a4d;
+    --dusty-mauve: #ddbfc3;
+    --azure-mist: #d6e5e3;
+    --shadow-grey: #34252f;
+    --backgrounds-borders: #f1f3f3;
+}
+
 @media only screen and (min-width: 38rem) {
 
     header, main, nav, footer {
@@ -10,13 +19,14 @@
         padding: 10px;
     }
 
+    /*************** NAVIGATION **************/
     .hamburger {
         display: none;
     }
 
     .navigation {
         display: block;
-        border-bottom: solid 1px #EEEEFF;
+        background-color: var(--deep-teal);
     }
 
     .navigation ul {
@@ -25,5 +35,44 @@
 
     .navigation a {
         border: none;
+        color: white;
+    }
+
+    /*************** Main **************/
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    h1 {
+        grid-column: 1/-1;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .courses {
+        grid-column: 1/-1;
+    }
+
+    .course-menu {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .wdd {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 10px;
+    }
+
+    .course-menu a {
+        width: 100%;
+        margin: 5px;
     }
 }
