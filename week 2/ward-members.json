@@ -1,0 +1,23 @@
+{
+    "familyName": "Johnson",
+    "moveInDate": "1/20/2026",
+    "householdSize": 3,
+    "visitedByBishopric": false,
+    "familyMembers": [
+        {
+            "name": "Sarah",
+            "gender": "female",
+            "birthdate": "5/6/1987"
+        },
+        {
+            "name": "Jared",
+            "gender": "male",
+            "birthdate": "9/17/1988"
+        },
+        {
+            "name": "Poppy",
+            "gender": "female",
+            "birthdate": "7/18/2020"
+        }
+    ]
+}
