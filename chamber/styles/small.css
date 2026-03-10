@@ -1,0 +1,15 @@
+/*---------- Color Scheme ----------*/
+:root {
+    --light-color: #dee9d5;
+    --dark-blue: #1f4662;
+    --dark-green: #364328;
+    --yellow: #f8b23a;
+    --light-blue: #a8d5e2;
+}
+
+* {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*---------- Header ----------*/
