@@ -7,9 +7,198 @@
     --light-blue: #a8d5e2;
 }
 
+/*---------- Site-Wide ----------*/
 * {
     font-family: "Inter", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
 /*---------- Header ----------*/
+header {
+    display: grid;
+    grid-template-columns: 34px auto 24px 44px;
+    padding: 5px;
+    align-items: center;
+    column-gap: 8px;
+    background-color: var(--light-color);
+    border-bottom: solid 4px var(--dark-blue);
+    
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/*---------- Hamburger Nav ----------*/
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Tahoma, Geneva, Verdana, sans-serif
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    color: #364328;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color:#364328;
+}
+
+/*---------- Nav Bar ----------*/
+.navigation {
+    display: none;
+    background-color: var(--light-color);
+    grid-column: 1/-1;
+    margin-top: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation img {
+    width: 100%;
+    height: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation li.active {
+    background-color: var(--light-blue);
+}
+
+.navigation a:hover {
+    background-color: var(--light-blue);
+}
+
+.dark-mode {
+    cursor: pointer;
+}
+/*---------- Main ----------*/
+main {
+    background-color: #fff;
+}
+
+
+
+h1 {
+    padding: 20px;
+    margin: 0;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.menu button {
+    width: 100px;
+    background-color: var(--dark-blue);
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
+
+.menu button:hover {
+    background-color: var(--dark-green);
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    padding: 20px 0;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    
+}
+
+#cards section {
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px #c2c2c2;  
+}
+
+section img {
+    height: 110px;
+    width: auto;
+    margin: 10px 0 20px 0;
+}
+
+section p, a {
+    margin: 5px; 
+}
+
+section a {
+    color: var(--dark-blue);
+}
+
+section a:hover {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
+.list img {
+    display: none;
+}
+
+.list #cards section {
+    text-align: left;
+    place-items: inherit;
+    padding: 10px;
+}
+
+
+/*---------- Footer ----------*/
+footer {
+    background-color: var(--light-color);
+    display: grid;
+    grid-gap: 1rem;
+    place-items: center;
+    text-align: center;
+    padding: 20px 5px;
+}
+.bold {
+    font-weight: 600;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer img {
+    padding: 5px;
+}
+

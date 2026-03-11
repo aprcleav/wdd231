@@ -6,10 +6,10 @@
     <title>Kingston Chamber of Commerce Directory</title>
     <meta name="author" content="April Cleaver">
     <meta name="description" content="Directory page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
-    <meta property="og:title" content="April Cleaver">
+    <meta property="og:title" content="Kingston Chamber of Commerce Directory">
     <meta property="og:description"
-        content="Placeholder">
-    <meta property="og:image" content="https://aprcleav.github.io/wdd231/images/facebook-image.webp">
+        content="Directory page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
+    <meta property="og:image" content="https://aprcleav.github.io/wdd231/chamber/images/hero.webp">
     <meta property="og:url" content="https://aprcleav.github.io/wdd231/chamber/directory">
     <link rel="stylesheet" href="/chamber/styles/normalize.css">
     <link rel="stylesheet" href="/chamber/styles/small.css">
@@ -19,23 +19,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap"
         rel="stylesheet">
+    <script src="/chamber/scripts/navigation.js" defer></script>
+    <script src="/chamber/scripts/date.js" defer></script>
+    <script src="/chamber/scripts/directory.js" defer></script>
 </head>
 <body>
-    <header>
-        <img class="logo" src="" alt="" width="" height="">
-        <h1>Kingston Chamber of Commerce</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-        <img class="dark-mode" src="" alt="" width="" height="">
-    </header>
+        <header>
+            <img class="logo" src="/chamber/images/site-logo.webp" alt="site logo" width="44" height="44">
+            <span>Kingston Chamber of Commerce</span>
+            <img class="dark-mode" src="/chamber/images/dark-mode.svg" alt="dark mode icon" width="44" height="44">
+            <button id="ham-button" class="hamburger" aria-label="navigation"></button>
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </header>
     <main>
-        
+        <h1>Business Directory</h1>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <article class="grid">
+            <div id="cards"></div>
+        </article>
     </main>
     <footer>
         <div class="cc-info">
@@ -47,14 +58,14 @@
 
         </div>
         <div class="socials">
-            <img src="" alt="" width="" height="">
-            <img src="" alt="" width="" height="">
-            <img src="" alt="" width="" height="">
+            <img src="/chamber/images/linkedin.svg" alt="linkedin icon" width="44" height="44">
+            <img src="/chamber/images/facebook.svg" alt="facebook" width="44" height="44">
+            <img src="/chamber/images/instagram.svg" alt="instagram icon" width="44" height="44">
         </div>
         <div class="class-info">
             <p>WDD231 Class Project</p>
             <p>April Cleaver</p>
-            <p>©<span id="date"></span> Kingston Chamber of Commerce</p>
+            <p>©<span id="year"></span> Kingston Chamber of Commerce</p>
             <p>Last Modification: <span id="last-modified"></span></p>
         </div>
     </footer>

@@ -1,0 +1,67 @@
+{
+    "members": [{
+        "name": "The Grub Hut",
+        "address": "11130 NE State Highway 104 Kingston, WA 98346",
+        "phone": "(360) 881-0147",
+        "url": "https://peaceloveandgrub.com/",
+        "img": "/chamber/images/grub-hut.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Grocery Outlet",
+        "address": "10978 WA-104 Kingston, WA",
+        "phone": "(360) 881-7072",
+        "url": "https://www.groceryoutlet.com/",
+        "img": "/chamber/images/grocery-outlet.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Kitsap Regional Library",
+        "address": "26159 Dulay Rd NE, Kingston, WA 98346",
+        "phone": "(360) 860-5070",
+        "url": "https://www.krl.org/",
+        "img": "/chamber/images/krl.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Kingston Mail & Print",
+        "address": "8202 NE State Hwy 104 STE 102",
+        "phone": "(360) 297-2173",
+        "url": "https://www.kingstonmailandprint.com/",
+        "img": "/chamber/images/kmp.webp",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Kingston Bookery",
+        "address": "10978 WA-104 #121, Kingston, WA 98346",
+        "phone": "(360) 297-7380",
+        "url": "https://kingstonbookery.com/",
+        "img": "/chamber/images/kingston-bookery.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Henery Hardware",
+        "address": "10978 WA-104 Suite 107, Kingston, WA 98346",
+        "phone": "(360) 297-3366",
+        "url": "https://www.heneryhardware.com/",
+        "img": "/chamber/images/henery-hardware.webp",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Borrowed Kitchen Bakery",
+        "address": "10978 NE State Hwy 104 Suite 111, Kingston, WA 98346",
+        "phone": "(360) 881-0207",
+        "url": "https://www.borrowedkitchenbakery.com/",
+        "img": "/chamber/images/bkb.webp",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Port of Kingston",
+        "address": "25864 Washington Blvd NE, Kingston, WA 98346",
+        "phone": "(360) 297-3545",
+        "url": "https://portofkingston.org/",
+        "img": "/chamber/images/port-kingston.webp",
+        "membershipLevel": 3
+    }
+    ]
+}

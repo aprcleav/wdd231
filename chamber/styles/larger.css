@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 34px auto 330px 24px;
+        padding: 0 10px;
+    }
+
+    /*************** NAVIGATION **************/
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: 0px;
+    }
+
+    .dark-mode {
+        grid-column: 4/5;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /*---------- Footer ----------*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: left;
+    }
+}
