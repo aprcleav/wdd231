@@ -1,4 +1,4 @@
-const url = "/chamber/data/members.json";
+const url = "chamber/data/members.json";
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
 const display = document.querySelector("article");
