@@ -16,7 +16,7 @@
 /*---------- Header ----------*/
 header {
     display: grid;
-    grid-template-columns: 34px auto 24px 44px;
+    grid-template-columns: 24px auto 24px 44px;
     padding: 5px;
     align-items: center;
     column-gap: 8px;
