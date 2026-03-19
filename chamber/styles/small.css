@@ -271,6 +271,15 @@ section a:hover {
     padding: 10px;
 }
 
+.spotlight a {
+    color: var(--dark-blue);
+}
+
+.spotlight a:hover {
+    color: var(--dark-green);
+    font-weight: 600;
+}
+
 .spotlight-card {
     display: grid;
     place-items: center;
@@ -286,6 +295,7 @@ section a:hover {
     font-weight: 600;
     padding: 0;
     margin: 0;
+    font-size: 1.1rem;
 }
 
 .spotlight .tagline {
@@ -304,6 +314,10 @@ section a:hover {
 
 .spotlight-info {
     font-size: .8rem;
+}
+
+.spotlight p, a {
+    margin: 5px;
 }
 
 
