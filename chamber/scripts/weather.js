@@ -34,6 +34,8 @@ function displayWeather(data)
     temp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
     weatherDesc.innerHTML = data.weather[0].description;
     const iconSrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`;
+    const weatherFlex = document.querySelector(".weather-flex");
+    
     weatherIcon.setAttribute("src", iconSrc);
     weatherIcon.setAttribute("alt", data.weather[0].description);
     humidity.innerHTML = `Humidity: ${data.main.humidity}`
