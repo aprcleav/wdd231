@@ -3,13 +3,14 @@
     --light-color: #dee9d5;
     --dark-blue: #1f4662;
     --dark-green: #364328;
-    --yellow: #f8b23a;
+    --yellow: #f8bd58;
     --light-blue: #a8d5e2;
+    --light-2: #a9c5ce;
 }
 
 /*---------- Site-Wide ----------*/
 * {
-    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -98,12 +99,10 @@ header span {
 .dark-mode {
     cursor: pointer;
 }
-/*---------- Main ----------*/
+/*---------- Directory Main ----------*/
 main {
     background-color: #fff;
 }
-
-
 
 h1 {
     padding: 20px;
@@ -130,7 +129,7 @@ h1 {
     cursor: pointer;
 }
 
-.grid {
+.grid, .spotlight{
     display: grid;
     padding: 20px 0;
 }
@@ -179,6 +178,134 @@ section a:hover {
     place-items: inherit;
     padding: 10px;
 }
+
+/*---------- Landing Page ----------*/
+.hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.cta {
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--yellow);
+    width: 175px; 
+    padding: 10px;
+    color: #000;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000079;
+    font-weight: 600;
+}
+
+.cta:hover {
+    background-color: var(--dark-blue);
+    color: #fff;
+}
+
+.middle {
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0 20px 20px;
+    text-align: center;
+}
+
+.middle h2 {
+    background-color: var(--dark-blue);
+    padding: 10px;
+    color: #fff;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.middle .card {
+    background-color: var(--light-2);
+    border: solid 1px var(--dark-blue);
+}
+
+#events p {
+    padding: 10px;
+}
+
+#events h3 {
+    padding: 10px;
+    margin: 0;
+}
+
+.weather-flex {
+    display: flex;
+    justify-content: center;
+}
+
+#weather-icon {
+    margin: 0;
+    height: 100px;
+    width: auto;
+}
+
+#current-temp {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#description {
+    text-transform: capitalize;
+}
+
+.weather-info {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#forecast p {
+    margin: 5px;
+    padding: 10px;
+}
+
+.spotlight-card {
+    display: grid;
+    place-items: center;
+    padding: 20px 0;
+    text-align: center;
+    border: solid 1px var(--dark-green);
+    border-radius: 40px;
+    margin: 10px 20px;
+    box-shadow: 0 0 10px #0000005d;
+}
+
+.spotlight .name {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.spotlight .tagline {
+    border-bottom: solid 1px var(--dark-green);
+    padding-bottom: 2%;
+    font-size: .8rem;
+    padding: 0 0 10px 0;
+    width: 90%;
+}
+
+.spotlight-card img {
+    max-height: 80px;
+    width: auto;
+    margin: 10px 0 10px 0;
+}
+
+.spotlight-info {
+    font-size: .8rem;
+}
+
 
 
 /*---------- Footer ----------*/

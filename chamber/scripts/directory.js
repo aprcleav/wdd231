@@ -47,8 +47,8 @@ function displayMembers(members) {
         url.textContent = member.url;
         url.setAttribute("href", member.url);
 
-        card.appendChild(img);
         card.appendChild(name);
+        card.appendChild(img);
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
