@@ -41,17 +41,23 @@
     }
 
     .middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .weather-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         font-size: .9rem;
     }
 
-    .weather-flex {
-        display: block;
-        text-align: center;
+    .middle p {
+        text-align: left;
+        padding: 0;
+        margin: 0;
     }
 
-    .weather-info {
-        text-align: center;
+    .weather-flex {
+        margin-top: 10px;
+        align-items: center;
     }
 
     .middle h2 {

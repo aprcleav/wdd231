@@ -1,7 +1,4 @@
-const temp = document.querySelector("#current-temp");
-const weatherIcon = document.querySelector("#weather-icon");
-const weatherDesc = document.querySelector("#description");
-const humidity = document.querySelector("#humidity");
+
 
 const key = "8953725fbbccdfa08ac4e302a3b49823";
 const lat = "47.80";
@@ -31,14 +28,27 @@ async function weatherFetch()
 // Display data from weather API
 function displayWeather(data)
 {
+    const weatherCard = document.querySelector(".weather-flex");
+    const icon = document.createElement("img");
+    const info = document.createElement("div");
+    const temp = document.createElement("p");
+    const desc = document.createElement("p");
+    const humidity = document.createElement("p");
+
     temp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
-    weatherDesc.innerHTML = data.weather[0].description;
+    temp.setAttribute("class", "temp");
+    desc.innerHTML = data.weather[0].description;
     const iconSrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}.png`;
-    const weatherFlex = document.querySelector(".weather-flex");
-    
-    weatherIcon.setAttribute("src", iconSrc);
-    weatherIcon.setAttribute("alt", data.weather[0].description);
+    icon.setAttribute("src", iconSrc);
+    icon.setAttribute("alt", data.weather[0].description);
+    info.setAttribute("class", "weather-info");
     humidity.innerHTML = `Humidity: ${data.main.humidity}`
+
+    weatherCard.appendChild(icon);
+    weatherCard.appendChild(info);
+    info.appendChild(temp);
+    info.appendChild(desc);
+    info.appendChild(humidity);
 }
 
 weatherFetch();
