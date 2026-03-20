@@ -1,5 +1,3 @@
-
-
 const key = "8953725fbbccdfa08ac4e302a3b49823";
 const lat = "47.80";
 const lon = "-122.50";
