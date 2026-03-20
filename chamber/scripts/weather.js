@@ -81,8 +81,8 @@ function displayForecast(data2)
 
     // Display day of week with temperature data using the index for each day. Data is collected every 3 hours, so every 8th line would be a new day (indexes 0, 7, and 15).
     firstDay.innerHTML = `Today: <strong>${Math.round(data2.list[0].main.temp)}&deg;F<strong/>`;
-    secondDay.innerHTML = `${daysOfWeek[day1 + 1]}: <strong>${Math.round(data2.list[7].main.temp)}&deg;F</strong>`;
-    thirdDay.innerHTML = `${daysOfWeek[day1 + 2]}: <strong>${Math.round(data2.list[15].main.temp)}&deg;F</strong>`;
+    secondDay.innerHTML = `${daysOfWeek[(day1 + 1) % 7]}: <strong>${Math.round(data2.list[7].main.temp)}&deg;F</strong>`;
+    thirdDay.innerHTML = `${daysOfWeek[(day1 + 2) % 7]}: <strong>${Math.round(data2.list[15].main.temp)}&deg;F</strong>`;
 
 }
 
