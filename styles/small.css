@@ -155,6 +155,7 @@ h2 {
     padding: 10px;
     background-color: var(--azure-mist);
     margin: 2%;
+    cursor: pointer;
 }
 
 .card p {
@@ -169,6 +170,38 @@ h2 {
 
 .incomplete {
     background-color: var(--dusty-mauve);
+}
+
+dialog {
+    max-width: 320px;
+    background-color: var(--backgrounds-borders);
+    text-align: center;
+    padding: 0;
+    border: none;
+}
+
+dialog h2 {
+    margin: 0;
+}
+
+dialog h3, dialog p {
+    padding: 0 10px;
+}
+
+::backdrop {
+    background-color: #264a4d62;
+}
+
+dialog button {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 5px;
+    background-color: var(--shadow-grey);
+    color: #fff;
+    border: none;
 }
 
 /************** FOOTER ****************/

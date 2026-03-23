@@ -65,4 +65,8 @@
         grid-template-columns: repeat(3, 1fr);
         margin: 0 5px;
     }
+
+        dialog {
+            max-width: 400px;
+        }
 }

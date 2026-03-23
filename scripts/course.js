@@ -103,7 +103,9 @@ wdd.addEventListener("click", () => {
 // Creates and populates cards
 function createCourseCard(filteredCourses)
 {
-    document.querySelector(".course-grid").innerHTML = "";
+    const courseGrid = document.querySelector(".course-grid");
+
+    courseGrid.innerHTML = "";
 
     filteredCourses.forEach(course => {
         let card = document.createElement("section");
@@ -127,12 +129,35 @@ function createCourseCard(filteredCourses)
         card.appendChild(subject);
         card.appendChild(number);
 
+        card.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
+
         // Uses reduce function to get the total number of credits for the filtered courses
         const total = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
         document.querySelector('#credit-count').textContent = total;
 
         document.querySelector(".course-grid").appendChild(card);
 
+    });
+}
+
+function displayCourseDetails(course) {
+    const courseDetails = document.querySelector("#course-details");
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
     });
 }
 
