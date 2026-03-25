@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kingston Chamber of Commerce</title>
     <meta name="author" content="April Cleaver">
-    <meta name="description"
-        content="Home page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
+    <meta name="description" content="Home page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
     <meta property="og:title" content="Welcome to the Kingston Chamber of Commerce">
     <meta property="og:description"
         content="Home page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
@@ -22,8 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
@@ -34,44 +31,48 @@
         <button id="ham-button" class="hamburger" aria-label="navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" alt="Welcome to Kingston">
-            <a class="cta" href="#">Join Now!</a>
-        </div>
-        <h1>Home</h1>
-        <section class="middle">
-            <div id="events" class="card">
-                <h2>Upcoming Events</h2>
-                <p><span class="bold">Lego Engineering Competition:</span> 3/31/26 at 10am</p>
-                <p><span class="bold">Kingston Kayak Race:</span> 4/17/26 at 2pm</p>
-                <p><span class="bold">KYSA McTakeover:</span> 5/15/26 at 5pm</p>
-            </div>
-            <div class="weather-grid">
-                <div id="weather" class="card">
-                    <h2>Current Weather</h2>
-                    <div class="weather-flex">
-                
-                    </div>
-                </div>
-                <div id="forecast" class="card">
-                    <h2>3 Day Forecast</h2>
-                    <p id="day1"></p>
-                    <p id="day2"></p>
-                    <p id="day3"></p>
-                </div>
-            </div>
-            
-        </section>
-        <div class="spotlight">
-        </div>
+        <h1>Join</h1>
+        <form action="" method="get">
+            <label for="first">First Name</label>
+                <input type="text" id="first" name="first" required autocomplete="given-name" title="First Name">
+            <label for="last">Last Name</label>
+                <input type="text" id="last" name="last" required autocomplete="family-name" title="Last Name">
+            <label for="title">Organizational Title</label>
+                <input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            <label for="email">Email Address</label>
+                <input type="email" id="email" required name="email" title="Email Address" placeholder="hello@email.com" autocomplete="email">
+            <label for="phone">Mobile Phone Number</label>
+                <input type="tel" required id="phone" name="phone" title="Mobile Phone Number" placeholder="000-000-0000" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+            <label for="business-name">Name of Business/Organization</label>
+                <input type="text" required id="business-name" name="business-name" title="Name of Business/Organization" autocomplete="organization">
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label for="np">NP Membership</label>
+                    <input type="radio" id="np" name="np" value="np" checked>
+                <label for="bronze">Bronze Membership</label>
+                    <input type="radio" id="bronze" name="bronze" value="bronze">
+                <label for="silver">Silver Membership</label>
+                    <input type="radio" id="silver" name="silver" value="silver">
+                <label for="gold">Gold Membership</label>
+                    <input type="radio" id="gold" name="gold" value="gold">
+            </fieldset>
+            <label for="description">Description of Business/Organization</label>
+                <textarea name="description" id="description" title="Description of Business/Organization"></textarea>
+            <label for="timestamp"></label>
+                <input type="hidden" name="timestamp" id="timestamp"> 
+            <input type="sumbit" value="Become a Member">
+
+            <!-- Timestamp -->
+             <!-- Submit button -->
+        </form>
     </main>
     <footer>
         <div class="cc-info">

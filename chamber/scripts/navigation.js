@@ -9,14 +9,6 @@ navButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
 });
 
-// Adds active class to whichever navigation link is clicked (for wayfinding)
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.forEach(l => l.classList.remove('active'));
-        link.classList.add('active');
-    });
-});
-
 
 
 
