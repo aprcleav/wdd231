@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -40,39 +41,54 @@
     </header>
     <main>
         <h1>Join</h1>
-        <form action="" method="get">
-            <label for="first">First Name</label>
+        <h2>Membership Application Form</h2>
+        <form action="thankyou.html" method="get">
+            <label for="first"><span class="required">*</span> First Name</label>
                 <input type="text" id="first" name="first" required autocomplete="given-name" title="First Name">
-            <label for="last">Last Name</label>
+            <label for="last"><span class="required">*</span> Last Name</label>
                 <input type="text" id="last" name="last" required autocomplete="family-name" title="Last Name">
             <label for="title">Organizational Title</label>
                 <input type="text" id="title" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
-            <label for="email">Email Address</label>
+            <label for="email"><span class="required">*</span> Email Address</label>
                 <input type="email" id="email" required name="email" title="Email Address" placeholder="hello@email.com" autocomplete="email">
-            <label for="phone">Mobile Phone Number</label>
+            <label for="phone"><span class="required">*</span> Mobile Phone Number</label>
                 <input type="tel" required id="phone" name="phone" title="Mobile Phone Number" placeholder="000-000-0000" autocomplete="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-            <label for="business-name">Name of Business/Organization</label>
+            <label for="business-name"><span class="required">*</span> Name of Business/Organization</label>
                 <input type="text" required id="business-name" name="business-name" title="Name of Business/Organization" autocomplete="organization">
             <fieldset>
                 <legend>Membership Level</legend>
                 <label for="np">NP Membership</label>
-                    <input type="radio" id="np" name="np" value="np" checked>
+                    <input type="radio" id="np" name="level" value="np" checked>
                 <label for="bronze">Bronze Membership</label>
-                    <input type="radio" id="bronze" name="bronze" value="bronze">
+                    <input type="radio" id="bronze" name="level" value="bronze">
                 <label for="silver">Silver Membership</label>
-                    <input type="radio" id="silver" name="silver" value="silver">
+                    <input type="radio" id="silver" name="level" value="silver">
                 <label for="gold">Gold Membership</label>
-                    <input type="radio" id="gold" name="gold" value="gold">
+                    <input type="radio" id="gold" name="level" value="gold">
             </fieldset>
             <label for="description">Description of Business/Organization</label>
                 <textarea name="description" id="description" title="Description of Business/Organization"></textarea>
-            <label for="timestamp"></label>
-                <input type="hidden" name="timestamp" id="timestamp"> 
-            <input type="sumbit" value="Become a Member">
-
-            <!-- Timestamp -->
-             <!-- Submit button -->
+            
+            <input type="hidden" name="timestamp" id="timestamp"> 
+            <input type="submit" value="Apply for Membership">
         </form>
+        <section id="card-grid">
+            <h2>Membership Levels</h2>
+            <div id="member-level">
+                <h3>Non Profit</h3>
+                <button id="np-button">Learn More</button>
+                <h3>Bronze</h3>
+                <button id="bro-button">Learn More</button>
+                <h3>Silver</h3>
+                <button id="sil-button">Learn More</button>
+                <h3>Gold</h3>
+                <button id="gol-button">Learn More</button>
+            </div>
+            <dialog id="dialog-box">
+                <div></div>
+                <button id="close-button">Close</button>
+            </dialog>
+        </section>
     </main>
     <footer>
         <div class="cc-info">

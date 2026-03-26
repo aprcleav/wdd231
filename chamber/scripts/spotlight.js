@@ -3,7 +3,6 @@ async function getMemberData() {
     try {
         const response = await fetch("data/members.json");
         const data = await response.json();
-        console.log(data.members);
 
         // Filter data to only Silver or Gold members
         const silverOrGold = data.members.filter(member => member.membershipLevel == 3 || member.membershipLevel == 2)
