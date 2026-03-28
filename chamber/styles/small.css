@@ -359,6 +359,7 @@ form fieldset {
         grid-gap: .5rem;
         padding: 10px;
         border: solid 1px var(--yellow);
+        margin-bottom: 20px;
 }
 form legend {
         font-weight: 600;
