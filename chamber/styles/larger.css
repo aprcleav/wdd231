@@ -124,6 +124,16 @@
             grid-template-rows: 50px 1fr;
         }
 
+        form fieldset {
+            grid-template-columns: 20px 1fr;
+            align-items: center;
+        }
+
+        form input[type="radio"] {
+            width: 16px;
+            height: 16px;
+        }
+
     /*---------- Footer ----------*/
     footer {
         display: grid;

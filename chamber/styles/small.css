@@ -355,7 +355,7 @@ form textarea {
 
 form fieldset {
         display: grid;
-        grid-template-columns: 20px 1fr;
+        grid-template-columns: 25px 1fr;
         grid-gap: .5rem;
         padding: 10px;
         border: solid 1px var(--yellow);
@@ -364,6 +364,12 @@ form fieldset {
 form legend {
         font-weight: 600;
         padding: 0 10px;
+}
+
+form input[type="radio"] {
+    width: 22px;
+    height: 22px;
+    padding: 22px;
 }
 
 form input[type="submit"] {
@@ -375,6 +381,7 @@ form input[type="submit"] {
         cursor: pointer;
         width: 100%;
         border-radius: 10px;
+        color: #000;
 }
 
 form input[type="submit"]:hover {
@@ -399,6 +406,7 @@ form input[type="submit"]:hover {
         cursor: pointer;
         width: 140px;
         border-radius: 10px;
+        color:#000;
 
     }
 
