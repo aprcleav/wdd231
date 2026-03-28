@@ -18,7 +18,7 @@ const closeButton = document.querySelector("#close-button");
 // Attach "Learn More" buttons to modals
 npButton.addEventListener("click", () => {
     dialogBoxText.innerHTML = `
-    <h3>Non Profit Membership</h3>
+    <h3>Non-Profit Membership</h3>
     <p><strong>Benefts:</strong> Special events and training<p>
     <p><strong>Price:</strong> Free<p>
     `
