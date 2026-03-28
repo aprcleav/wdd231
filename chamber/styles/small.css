@@ -372,6 +372,8 @@ form input[type="submit"] {
         background-color: var(--yellow);
         border: none;
         cursor: pointer;
+        width: 100%;
+        border-radius: 10px;
 }
 
 form input[type="submit"]:hover {
@@ -394,6 +396,9 @@ form input[type="submit"]:hover {
         background-color: var(--yellow);
         border: none;
         cursor: pointer;
+        width: 140px;
+        border-radius: 10px;
+
     }
 
 .level-card button:hover {
