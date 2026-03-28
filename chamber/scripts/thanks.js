@@ -13,10 +13,12 @@ const description = formInfo.get("description");
 const timestamp = formInfo.get("timestamp");
 
 document.querySelector("#results").innerHTML = `
+<p>Thank you for your interest in joining the Kingston Chamber of Commerce! Your application has been sent.</p>
+<br>
 <p><strong>Name: </strong>${first} ${last}</p>
 <p><strong>Email: </strong>${email}</p>
 <p><strong>Phone: </strong>${phone}</p>
 <p><strong>Name of Business/Organization: </strong>${businessName}</p>
 <br>
-<p>${timestamp} <-- Format this to make it look nice</p>
+<p>${timestamp}</p>
 `

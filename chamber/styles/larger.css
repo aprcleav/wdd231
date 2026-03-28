@@ -77,7 +77,52 @@
         margin: 5px;
     }
 
-    
+    /*---------- Join Page ----------*/
+        #join {
+            grid-template-columns: 1fr 1fr;
+            
+        }
+
+        #join h1 {
+            grid-column: 1/-1;
+            justify-self: left;
+            margin-bottom: 20px;
+        }
+
+        #join form {
+            padding-top: 0;
+        }
+
+        #join h2 {
+            margin-top: 0;
+        }
+
+        .level-card {
+            animation: fadeInUp 2s forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+                margin-bottom: 50px
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+                margin-bottom: 10px;
+            }
+        }
+
+        .card img {
+            width: 80px;
+            height: auto;
+        }
+
+        #card-grid {
+            display: grid;
+            grid-template-rows: 50px 1fr;
+        }
 
     /*---------- Footer ----------*/
     footer {
