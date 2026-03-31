@@ -1,0 +1,11 @@
+@media only screen and (min-width: 38rem) {
+.wireframes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2rem 1fr;
+        grid-gap: 1rem;
+    }
+
+.hide {
+    display: block;
+}
+}

@@ -1,0 +1,96 @@
+/* ----- Color Scheme ----- */
+:root {
+    --primary-color: #688a05;
+    --light-primary: #deeeae;
+    --accent-color: #D52941;
+    --background-color: #FAFAFA;
+    --typeface-color: #2E3532;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", Arial, sans-serif;
+    font-size: 1.1rem;
+    color: var(--typeface-color);
+    background-color: var(--background-color);
+}
+
+/* ----- Set Headings ----- */
+h1, h2, h3 {
+    font-family: "Libre Baskerville", 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: .5rem 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 1.2rem 0 .5rem 0;
+    padding: 1rem;
+    border-bottom: solid 4px var(--primary-color);
+    /* color: var(--background-color);
+    background-color: var(--primary-color); */
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 .5rem 0;
+    color: var(--accent-color);
+}
+
+/* ----- Header ----- */
+header {
+    padding: 1rem;
+    box-shadow: 0 0 10px #00000069;
+    /* background-color:var(--typeface-color);
+    color: var(--background-color); */
+    border-bottom: solid 8px var(--primary-color);
+    background-color:var(--light-primary);
+}
+
+/* ----- Main ----- */
+main {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+p {
+    padding: .2rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: .5rem 0;
+}
+
+.head {
+    font-family: "Libre Baskerville", 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.hide {
+    display: none;
+}
+.wireframes {
+    display: grid;
+}
+
+footer {
+    background-color: var(--light-primary);
+    padding: 2rem;
+    text-align: center;
+}
+
+
