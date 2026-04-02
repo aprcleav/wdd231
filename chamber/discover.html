@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingston Chamber of Commerce</title>
+    <title>Kingston Chamber of Commerce: Discover Kingston</title>
     <meta name="author" content="April Cleaver">
     <meta name="description"
-        content="Home page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
-    <meta property="og:title" content="Welcome to the Kingston Chamber of Commerce">
+        content="Discover page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
+    <meta property="og:title" content="Kingston Chamber of Commerce: Discover Kingston">
     <meta property="og:description"
-        content="Home page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
+        content="Discover page for the Chamber of Commerce project website for WDD 231 at BYU-Idaho">
     <meta property="og:image" content="https://aprcleav.github.io/wdd231/chamber/images/hero.webp">
-    <meta property="og:url" content="https://aprcleav.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://aprcleav.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="/chamber/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400..900&display=swap" rel="stylesheet">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
 </head>
 
 <body>
@@ -34,44 +34,23 @@
         <button id="ham-button" class="hamburger" aria-label="navigation"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/hero.webp" alt="Welcome to Kingston">
-            <a class="cta" href="join.html">Join Now!</a>
+        <h1>Discover Kingston</h1>
+        <div id="display-message">
+
         </div>
-        <h1>Home</h1>
-        <section class="middle">
-            <div id="events" class="card">
-                <h2>Upcoming Events</h2>
-                <p><span class="bold">Lego Engineering Competition:</span> 3/31/26 at 10am</p>
-                <p><span class="bold">Kingston Kayak Race:</span> 4/17/26 at 2pm</p>
-                <p><span class="bold">KYSA McTakeover:</span> 5/15/26 at 5pm</p>
-            </div>
-            <div class="weather-grid">
-                <div id="weather" class="card">
-                    <h2>Current Weather</h2>
-                    <div class="weather-flex">
-                
-                    </div>
-                </div>
-                <div id="forecast" class="card">
-                    <h2>3 Day Forecast</h2>
-                    <p id="day1"></p>
-                    <p id="day2"></p>
-                    <p id="day3"></p>
-                </div>
-            </div>
-            
-        </section>
-        <div class="spotlight">
-        </div>
+        <article class="discover-grid">
+            <div id="discover-cards"></div>
+        </article>
+        
+        
     </main>
     <footer>
         <div class="cc-info">
@@ -80,10 +59,11 @@
             <p>Kingston, WA 98346</p>
             <p>info@kingstoncc.com</p>
             <p>(360) 867-5309</p>
+
         </div>
         <div class="socials">
             <a href="#"><img src="images/linkedin.svg" alt="linkedin icon" width="44" height="44"></a>
-            <a href="#"><img src="images/facebook.svg" alt="facebook icon" width="44" height="44"></a>
+            <a href="#"><img src="images/facebook.svg" alt="facebook" width="44" height="44"></a>
             <a href="#"><img src="images/instagram.svg" alt="instagram icon" width="44" height="44"></a>
         </div>
         <div class="class-info">

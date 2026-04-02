@@ -30,6 +30,7 @@ header img {
     display: block;
     width: 100%;
     height: auto;
+    /* padding: 0 1rem; */
 }
 
 header span {
@@ -444,13 +445,14 @@ form input[type="submit"]:hover {
         padding: 10px 10px 0;
 }
 
-#dialog-box button {
+#dialog-box button, #discover-button {
         margin-bottom: 15px;
         padding: 10px;
         background-color: var(--yellow);
         border: none;
         cursor: pointer;
         width: 140px;
+        height: 40px;
         border-radius: 10px;
         color: #000;
 }
@@ -458,6 +460,11 @@ form input[type="submit"]:hover {
 #dialog-box button:hover {
         background-color: var(--light-blue);
         color: #000;
+}
+
+#discover-button:hover {
+    background-color: var(--dark-blue);
+    color: #fff;
 }
 
 #join {
@@ -475,6 +482,83 @@ form input[type="submit"]:hover {
     margin-bottom: 30px;
     margin: 0 20px 20px 20px;
     background-color: #a8d5e23f;
+}
+
+/* --------- Discover page --------- */
+.discover-grid {
+    margin: 0 1rem 1.5rem;
+}
+
+#discover-cards {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+#discover-cards section {
+    box-shadow: 0 0 10px #00000056;
+    margin: .5rem;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "photo"
+    "name"
+    "description"
+    "address"
+    "button";
+}
+
+#discover-cards h2 {
+    grid-area: name;
+    margin: 0 .3rem;
+    padding: .5rem;
+}
+
+#discover-cards figure {
+    grid-area: photo;
+    margin: 0;
+}
+
+#discover-cards img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+#discover-cards p {
+    grid-area: description;
+    margin: 0 .3rem;
+    padding: .5rem;
+}
+
+#discover-cards address {
+    grid-area: address;
+    margin: 0 .3rem;
+    padding: .5rem;
+}
+
+#discover-button {
+    grid-area: button;
+    display: block; 
+    margin: .5rem auto 1rem;
+}
+
+#display-message {
+    margin: 0 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background: var(--light-color);
+    padding: .2rem;
+}
+
+.message {
+    font-weight: 600;
+    font-size: 1.2rem;
+    background: var(--light-color);
+    padding: 1rem;
+    display: block;
+    margin: auto;
 }
 
 /*---------- Footer ----------*/

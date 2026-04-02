@@ -1,0 +1,54 @@
+@media only screen and (min-width: 38rem) {
+    header {
+            grid-template-columns: 34px auto 330px 34px;
+            padding: 0 10px;
+        }
+
+    header img {
+        padding: 0 0 0 .5rem;
+    }
+    
+    /* ----- Navigation ----- */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        margin-top: 0px;
+    }
+
+    .dark-mode {
+        grid-column: 4/5;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+    /* ----- Discover page ----- */
+
+    #discover-cards section {
+            display: grid;
+            grid-template-areas:
+                "photo name"
+                "photo description"
+                "photo address"
+                "photo button";
+            grid-template-columns: 300px 1fr;
+        }
+
+    #discover-cards img {
+        width: 300px;
+    }
+
+    #discover-cards img:hover {
+        border-radius: 50%;
+    }
+
+}
