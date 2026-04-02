@@ -6,8 +6,12 @@
     }
 
     header {
-        grid-template-columns: 34px auto 330px 24px;
+        grid-template-columns: 34px auto 330px 34px;
         padding: 0 10px;
+    }
+
+    header img {
+        padding: 0 0 0 .5rem;
     }
 
     /*************** NAVIGATION **************/
