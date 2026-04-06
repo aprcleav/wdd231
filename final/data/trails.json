@@ -1,0 +1,109 @@
+{
+    "trails": [
+        {
+            "name": "Skyline Trail",
+            "location": "Mount Rainier National Park, WA",
+            "description": "An iconic loop starting from Paradise, offering subalpine meadows, marmot sightings, and up-close views of the Nisqually Glacier.",
+            "distance": "5.5 miles",
+            "difficulty": "Moderate"
+        },
+        {
+            "name": "Trail of Ten Falls",
+            "location": "Silver Falls State Park, OR",
+            "description": "A world-class canyon trail that passes ten distinct waterfalls, several of which you can walk behind.",
+            "distance": "7.4 miles",
+            "difficulty": "Moderate"
+        },
+        {
+            "name": "Colchuck Lake",
+            "location": "Alpine Lakes Wilderness, WA",
+            "description": "A steep climb to a stunning turquoise alpine lake sitting at the base of Dragontail and Colchuck Peaks.",
+            "distance": "8.0 miles",
+            "difficulty": "Hard"
+        },
+        {
+            "name": "Misery Ridge Loop",
+            "location": "Smith Rock State Park, OR",
+            "description": "A high-desert trek featuring unique basalt cliffs, views of the Monkey Face pillar, and the Crooked River.",
+            "distance": "3.7 miles",
+            "difficulty": "Hard"
+        },
+        {
+            "name": "Mount Storm King",
+            "location": "Olympic National Park, WA",
+            "description": "A steep, unmaintained ascent involving rope assists that rewards hikers with a panoramic view of Lake Crescent.",
+            "distance": "4.7 miles",
+            "difficulty": "Hard"
+        },
+        {
+            "name": "Multnomah Falls & Wahkeena Loop",
+            "location": "Columbia River Gorge, OR",
+            "description": "Combines the most famous waterfall in Oregon with several smaller falls and misty canyon views.",
+            "distance": "4.9 miles",
+            "difficulty": "Moderate"
+        },
+        {
+            "name": "Hall of Mosses",
+            "location": "Hoh Rainforest, WA",
+            "description": "An easy walk through a lush, temperate rainforest draped in club moss and ancient ferns.",
+            "distance": "0.8 miles",
+            "difficulty": "Easy"
+        },
+        {
+            "name": "Tamolitch Blue Pool",
+            "location": "Willamette National Forest, OR",
+            "description": "A scenic hike along the McKenzie River to a surreal, vibrant blue pool where the river emerges from an underground lava tube.",
+            "distance": "4.2 miles",
+            "difficulty": "Easy"
+        },
+        {
+            "name": "Heather-Maple Pass Loop",
+            "location": "North Cascades National Park, WA",
+            "description": "Widely considered one of the best 'bang-for-your-buck' hikes for jagged mountain peaks and fall larch colors.",
+            "distance": "7.2 miles",
+            "difficulty": "Hard"
+        },
+        {
+            "name": "Mirror Lake",
+            "location": "Mount Hood National Forest, OR",
+            "description": "A popular, family-friendly trail leading to a lake that provides a perfect reflection of Mount Hood.",
+            "distance": "4.2 miles",
+            "difficulty": "Moderate"
+        },
+        {
+            "name": "Rattlesnake Ledge",
+            "location": "North Bend, WA",
+            "description": "A well-maintained, steady climb to a rocky outcrop overlooking Rattlesnake Lake and the Snoqualmie Valley.",
+            "distance": "4.0 miles",
+            "difficulty": "Moderate"
+        },
+        {
+            "name": "Cape Flattery Trail",
+            "location": "Olympic Peninsula, WA",
+            "description": "A boardwalk trail leading to the northwesternmost point of the contiguous US, featuring dramatic sea sea stacks.",
+            "distance": "1.5 miles",
+            "difficulty": "Easy"
+        },
+        {
+            "name": "South Sister",
+            "location": "Three Sisters Wilderness, OR",
+            "description": "A grueling non-technical climb to the summit of Oregon's third-tallest peak, offering views of the entire Cascade range.",
+            "distance": "12.2 miles",
+            "difficulty": "Very Hard"
+        },
+        {
+            "name": "Twin Falls",
+            "location": "Olallie State Park, WA",
+            "description": "A pleasant, forested trail along the South Fork Snoqualmie River leading to three different waterfall viewpoints.",
+            "distance": "2.6 miles",
+            "difficulty": "Easy"
+        },
+        {
+            "name": "God's Thumb",
+            "location": "Lincoln City, OR",
+            "description": "A coastal hike through a 'ghost forest' to a basalt headland that looks like a giant thumb overlooking the Pacific.",
+            "distance": "4.3 miles",
+            "difficulty": "Moderate"
+        }
+    ]
+}
