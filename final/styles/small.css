@@ -1,7 +1,7 @@
 /* ----- Color Scheme ----- */
 :root {
-    --primary-color: #688a05;
-    --light-primary: #deeeae;
+    --green-color: #174e09;
+    --light-green: #deeeae;
     --accent-color: #D52941;
     --background-color: #FAFAFA;
     --typeface-color: #2E3532;
@@ -17,81 +17,6 @@ body {
     font-size: 1.1rem;
     color: var(--typeface-color);
     background-color: var(--background-color);
-}
-
-/* ----- Hamburger Navigation ----- */
-.hamburger {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: Tahoma, Geneva, Verdana, sans-serif
-}
-
-.hamburger::before {
-    content: "\2630";
-    font-size: 2rem;
-    color: #364328;
-}
-
-.hamburger.show::before {
-    content: "\00D7";
-    font-size: 2rem;
-    color: #364328;
-}
-/*---------- Nav Bar ----------*/
-.navigation {
-    display: none;
-    background-color: var(--light-color);
-    grid-column: 1/-1;
-    margin-top: 10px;
-}
-
-.navigation.show {
-    display: block;
-}
-
-.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navigation a {
-    display: block;
-    padding: .8rem 10px;
-    text-decoration: none;
-    color: var(--typeface-color);
-}
-
-.navigation li.active {
-    background-color: var(--light-primary);
-}
-
-.navigation a:hover {
-    background-color: var(--light-primary);
-}
-
-/* ----- Set Headings ----- */
-h1,
-h2,
-h3 {
-    font-family: "Libre Baskerville", 'Times New Roman', serif;
-    font-weight: 700;
-    font-style: italic;
-    margin: .5rem 0;
-}
-
-h2 {
-    font-size: 1.6rem;
-    margin: 1.2rem 0 .5rem 0;
-    padding: 1rem;
-    border-bottom: solid 4px var(--primary-color);
-}
-
-h3 {
-    font-size: 1.2rem;
-    margin: 1.2rem 0 .5rem 0;
-    color: var(--accent-color);
 }
 
 /* ----- Header ----- */
@@ -119,16 +44,162 @@ header img {
     margin: 0;
 }
 
-/* ----- Main ----- */
-main {
-    max-width: 1000px;
+/* ----- Hamburger Navigation ----- */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Tahoma, Geneva, Verdana, sans-serif
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    color: #364328;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color: #364328;
+}
+/*---------- Nav Bar ----------*/
+.navigation {
+    display: none;
+    background-color: var(--background-color);
+    grid-column: 1/-1;
+    margin-top: 10px;
+}
+
+.navigation.show {
     display: block;
-    margin: auto;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: var(--typeface-color);
+}
+
+.navigation li.active {
+    background-color: var(--light-green);
+}
+
+.navigation a:hover {
+    background-color: var(--light-green);
+}
+
+/* ----- Set Headings ----- */
+h1,
+h2,
+h3 {
+    font-family: "Libre Baskerville", 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: .5rem 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 1.2rem 0 .5rem 0;
     padding: 1rem;
 }
 
+h3 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 .5rem 0;
+    color: var(--accent-color);
+}
+
+
+
+/* ----- Main ----- */
+main {
+    max-width: 1200px;
+    display: block;
+    margin: auto;
+}
+
+h1 {
+    display: none;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    text-align: center;
+    padding: 1rem;
+}
+
+button {
+    display: block;
+    background-color: var(--green-color);
+    color: var(--background-color);
+    border: none;
+    padding: 1rem;
+    margin: 1rem auto;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: var(--accent-color);
+}
+
+.bio {
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--light-green);
+
+}
+
+.bio img {
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.newsletter {
+    background-color: var(--light-green);
+    text-align: center;
+}
+
+.newsletter h2 {
+    padding-top: 2.5rem;
+}
+
+.newsletter p {
+    padding: 0 1rem;
+}
+
+.newsletter button {
+    margin-bottom: 2rem;
+}
+
+/* ----- Footer ----- */
+
 footer {
-    background-color: var(--light-primary);
+    background-color: var(--light-green);
     padding: 2rem;
     text-align: center;
+}
+
+.socials img {
+    margin: 0 .5rem 1rem;
+    padding: 1px;
 }
