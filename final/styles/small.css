@@ -1,0 +1,134 @@
+/* ----- Color Scheme ----- */
+:root {
+    --primary-color: #688a05;
+    --light-primary: #deeeae;
+    --accent-color: #D52941;
+    --background-color: #FAFAFA;
+    --typeface-color: #2E3532;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", Arial, sans-serif;
+    font-size: 1.1rem;
+    color: var(--typeface-color);
+    background-color: var(--background-color);
+}
+
+/* ----- Hamburger Navigation ----- */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Tahoma, Geneva, Verdana, sans-serif
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+    color: #364328;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color: #364328;
+}
+/*---------- Nav Bar ----------*/
+.navigation {
+    display: none;
+    background-color: var(--light-color);
+    grid-column: 1/-1;
+    margin-top: 10px;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    text-decoration: none;
+    color: var(--typeface-color);
+}
+
+.navigation li.active {
+    background-color: var(--light-primary);
+}
+
+.navigation a:hover {
+    background-color: var(--light-primary);
+}
+
+/* ----- Set Headings ----- */
+h1,
+h2,
+h3 {
+    font-family: "Libre Baskerville", 'Times New Roman', serif;
+    font-weight: 700;
+    font-style: italic;
+    margin: .5rem 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin: 1.2rem 0 .5rem 0;
+    padding: 1rem;
+    border-bottom: solid 4px var(--primary-color);
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 .5rem 0;
+    color: var(--accent-color);
+}
+
+/* ----- Header ----- */
+header {
+    padding: .5rem;
+    box-shadow: 0 0 10px #00000069;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "logo title nav";
+    grid-template-columns: 80px 1fr 44px;
+    align-items: center;
+
+}
+
+header span {
+    font-family: "Libre Baskerville", 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* ----- Main ----- */
+main {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--light-primary);
+    padding: 2rem;
+    text-align: center;
+}
