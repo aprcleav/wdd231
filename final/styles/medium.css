@@ -1,17 +1,95 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 600px) {
+    /* ----- Header ----- */
+    header {
+        grid-template-columns: 80px 1fr 300px;
+    }
+
+    /* ----- Navigation ----- */
+    .hamburger {
+            display: none;
+        }
+    
+        .navigation {
+            display: block;
+        }
+    
+        .navigation ul {
+            display: flex;
+            justify-content: end;
+            margin-right: 1rem;
+        }
+    
+        .navigation a {
+            border: none;
+        }
+
+    /* ----- Main ----- */
+    
     .hero {
         background: black;
         overflow: hidden;
     }
     
     .hero img {
-        opacity: 0.7;
+        opacity: 0.5;
         position: relative;
     }
+
     .hero-text {
         position: absolute;
-        top: 10rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -170%);
         color: var(--background-color);
         text-align: center;
+    }
+
+    button {
+        display: block;
+        background-color: var(--accent-color);
+        color: var(--background-color);
+        border: none;
+        padding: 1rem;
+        margin: 1rem auto;
+        cursor: pointer;
+    }
+
+    .hero button:hover {
+        background-color: var(--green-color);
+    }
+
+    .bio {
+        display: grid;
+        grid-template-areas: 
+            "title photo"
+            "info photo";
+        grid-template-rows: 100px 1fr;
+        grid-template-columns: 1fr 300px;
+    }
+
+    .bio h2 {
+        grid-area: title;
+        text-align: left;
+    }
+
+    .bio p {
+        grid-area: info;
+        text-align: left;
+        margin: 0 1rem 1rem;
+    }
+
+    .bio img {
+        grid-area: photo;
+        align-self: center;
+    }
+
+    .newsletter {
+        grid-template-areas: 
+            "photo title"
+            "photo info"
+            "photo button";
+    }
+    .newsletter img {
+        grid-area: photo;
     }
 }

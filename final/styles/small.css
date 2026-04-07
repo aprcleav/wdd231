@@ -36,12 +36,14 @@ header span {
     font-family: "Libre Baskerville", 'Times New Roman', serif;
     font-style: italic;
     font-size: 1.5rem;
+    grid-area: title;
 }
 
 header img {
     width: 100%;
     height: auto;
     margin: 0;
+    grid-area: logo;
 }
 
 /* ----- Hamburger Navigation ----- */
@@ -69,6 +71,7 @@ header img {
     background-color: var(--background-color);
     grid-column: 1/-1;
     margin-top: 10px;
+    grid-area: nav;
 }
 
 .navigation.show {
@@ -127,10 +130,6 @@ main {
     margin: auto;
 }
 
-h1 {
-    display: none;
-}
-
 main img {
     width: 100%;
     height: auto;
@@ -146,6 +145,7 @@ main img {
 .hero-text {
     text-align: center;
     padding: 1rem;
+    max-width: 600px;
 }
 
 button {

@@ -1,0 +1,18 @@
+@media only screen and (min-width:1000px){
+    /* ----- Header ----- */
+    header span {
+    font-size: 2rem;
+        }
+
+    /* ----- Main ----- */
+    .hero-text {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -120%);
+    }
+
+    .hero-text p {
+        padding: .5rem;
+    }
+
+}
