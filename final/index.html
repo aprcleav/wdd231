@@ -6,13 +6,12 @@
     <title>Footsteps in the Forest</title>
     <meta name="description" content="A hiking blog featuring trails located primarily in the Pacific Northwest.">
     <meta name="author" content="April Cleaver">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="favicon.ico">
     <meta property="og:title" content="Footsteps in the Forest">
     <meta property="og:description"
         content="A hiking blog featuring trails located primarily in the Pacific Northwest">
     <meta property="og:image" content="https://aprcleav.github.io/wdd231/final/images/og-image.webp">
-    <meta property="og:url" content="https://aprcleav.github.io/wdd231/final">
+    <meta property="og:url" content="https://aprcleav.github.io/wdd231/final/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,700&family=Outfit&display=swap"
@@ -21,45 +20,56 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script src="scripts/footsteps.js" defer></script>
+    <script src="scripts/footsteps.js" type="module"></script>
 </head>
 <body>
     <header>
-        <img src="images/fitf-logo.png" alt="site logo" width="512" height="512">
+        <img src="images/fitf-logo.webp" alt="site logo" width="512" height="512">
         <span>Footsteps in the Forest</span>
         <button id="ham-button" class="hamburger" aria-label="navigation"></button>
-    <nav id="nav-bar" class="navigation">
-        <ul>
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="#">Favorite Trails</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        </header>
-    </nav>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./trails.html">Trails</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section class="hero">
-            <!-- Make image responsive for different screen sizes -->
-            <img src="images/og-image.webp" alt="hiker in the mountains">
+             <picture>
+                <source media="(width <= 400px)" srcset="images/hero-small.webp">
+                <source media="(width <= 600px)" srcset="images/hero-medium.webp">
+                <source media="(width >= 900px)" srcset="images/hero-large.webp">
+                <img src="images/hero-large.webp"alt="hiker in the mountains">
+            </picture>
             <div class="hero-text">
                 <h1>Footsteps in the Forest</h1> 
                 <p>Exploring the majesty of the Pacific Northwest, one trail at a time.</p>
-                <button>My Favorite Trails</button>
+                <button>See the Trails</button>
             </div>
         </section>
         <section class="bio">
-            <h2>Hi! I'm Nancy.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum non voluptatum, vel iusto cupiditate debitis quidem doloribus sequi suscipit dicta omnis nobis laudantium nostrum perferendis necessitatibus perspiciatis, quibusdam sunt quasi.</p>
+            <div class="bio-text">
+                <h2>Hi! I'm Nancy.</h2>
+                <p>I'm a PNW enthusiast sharing my favorite trails and forest stories. Join me for rugged mountain peaks, misty evergreen
+                paths, and the quiet, breathtaking moments found only in the great outdoors.</p>
+            </div>
             <img src="images/nancy-jensen.webp" alt="Nancy Jensen">
         </section>
-        <section class="latest-posts">
-            <h2>Latest Trails</h2>
+        <section class="top-trails">
+            <h2>My Favorite Trails</h2>
             <div id="trail-grid"></div>
         </section>
+        <dialog id="trail-details">
+        </dialog>
         <section class="newsletter">
-            <h2>Monthly Newsletter</h2>
-            <p>Get trail inspiration sent to your inbox each month.</p>
-            <button>Sign Up</button>
             <img src="images/trail1.webp" alt="Port Gamble hiking trail">
+            <div class="newsletter-text">
+                <h2>Monthly Newsletter</h2>
+                <p>Get trail inspiration sent to your inbox each month.</p>
+                <button>Sign Up</button>
+            </div>
         </section>
     </main>
     <footer>

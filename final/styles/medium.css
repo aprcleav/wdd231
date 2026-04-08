@@ -1,35 +1,49 @@
 @media only screen and (min-width: 600px) {
     /* ----- Header ----- */
+
     header {
         grid-template-columns: 80px 1fr 300px;
     }
 
     /* ----- Navigation ----- */
+
     .hamburger {
-            display: none;
-        }
-    
-        .navigation {
-            display: block;
-        }
-    
-        .navigation ul {
-            display: flex;
-            justify-content: end;
-            margin-right: 1rem;
-        }
-    
-        .navigation a {
-            border: none;
-        }
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation.show {
+        grid-column: 3/4;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: end;
+        margin-right: 1rem;
+    }
+
+    .navigation a {
+        border: none;
+    }
 
     /* ----- Main ----- */
-    
+    .bio,
+    .top-trails,
+    .newsletter {
+        width: 80%;
+        display: block;
+        margin: auto;
+        max-width: 800px;
+    }
+
     .hero {
         background: black;
         overflow: hidden;
     }
-    
+
     .hero img {
         opacity: 0.5;
         position: relative;
@@ -42,54 +56,78 @@
         transform: translate(-50%, -170%);
         color: var(--background-color);
         text-align: center;
-    }
-
-    button {
-        display: block;
-        background-color: var(--accent-color);
-        color: var(--background-color);
-        border: none;
-        padding: 1rem;
-        margin: 1rem auto;
-        cursor: pointer;
-    }
-
-    .hero button:hover {
-        background-color: var(--green-color);
+        background-color: transparent;
     }
 
     .bio {
-        display: grid;
-        grid-template-areas: 
-            "title photo"
-            "info photo";
-        grid-template-rows: 100px 1fr;
-        grid-template-columns: 1fr 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .bio h2 {
-        grid-area: title;
         text-align: left;
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .bio p {
-        grid-area: info;
         text-align: left;
         margin: 0 1rem 1rem;
     }
 
     .bio img {
-        grid-area: photo;
-        align-self: center;
+        max-width: 300px;
     }
 
     .newsletter {
-        grid-template-areas: 
-            "photo title"
-            "photo info"
-            "photo button";
+        display: grid;
+        grid-template-areas:
+            "photo info";
+        place-items: center;
     }
+
     .newsletter img {
         grid-area: photo;
+        min-width: 300px;
+    }
+
+    .top-trails h2 {
+        text-align: left;
+        margin-left: 1.5rem;
+    }
+
+    @keyframes shiftUp {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-5px);
+        }
+    }
+    .card {
+        cursor: pointer;
+    }
+    .card:hover {
+        animation: shiftUp .2s ease-out forwards;
+    }
+
+    #trail-details:modal {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "img text";
+        place-items: center;
+        width: 800px;
+    }
+
+    #trail-details button {
+        justify-self: left;
+        margin: 1rem .5rem;
+    }
+
+    #trail-details img {
+        grid-area: img;
     }
 }
