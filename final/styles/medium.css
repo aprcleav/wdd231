@@ -30,6 +30,16 @@
     }
 
     /* ----- Main ----- */
+    button {
+        background-color: var(--light-green);
+        color: var(--typeface-color);
+    }
+
+    button:hover {
+        background-color: var(--green-color);
+        color: var(--background-color);
+    }
+    
     .bio,
     .top-trails,
     .newsletter {

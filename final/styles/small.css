@@ -156,9 +156,9 @@ main img {
 
 button {
     display: block;
-    background-color: var(--light-green);
+    background-color: var(--typeface-color);
     border-radius: 10px;
-    color: var(--typeface-color);
+    color: var(--background-color);
     border: none;
     padding: 1rem;
     margin: 1rem auto;
@@ -167,7 +167,6 @@ button {
 
 button:hover {
     background-color: var(--green-color);
-    color: var(--background-color);
 }
 
 .bio {
