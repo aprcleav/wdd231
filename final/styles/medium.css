@@ -51,7 +51,7 @@
 
     .hero {
         background: black;
-        overflow: hidden;
+        height: 100%;
     }
 
     .hero img {
