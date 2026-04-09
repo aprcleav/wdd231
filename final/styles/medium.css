@@ -57,6 +57,7 @@
     .hero img {
         opacity: 0.5;
         position: relative;
+        z-index: 1;
     }
 
     .hero-text {
@@ -67,6 +68,7 @@
         color: var(--background-color);
         text-align: center;
         background-color: transparent;
+        z-index: 2;
     }
 
     .bio {
