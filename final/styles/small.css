@@ -113,6 +113,9 @@ h3 {
     font-style: italic;
     margin: .5rem 0;
 }
+h1 {
+    margin: 1rem;
+}
 
 h2 {
     font-size: 1.6rem;
@@ -274,6 +277,20 @@ button:hover {
 #closeModal:hover {
     border: none;
     background-color: var(--green-color);
+}
+
+/* ----- Trails Page ----- */
+
+.trail-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.trail-buttons button {
+    margin: .5rem;
 }
 
 /* ----- Footer ----- */

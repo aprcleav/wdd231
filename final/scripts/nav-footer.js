@@ -1,0 +1,18 @@
+// Hamburger & Nav Bar
+
+const navButton = document.querySelector('#ham-button');
+const navBar = document.querySelector('#nav-bar');
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+});
+
+// Footer Date & Last Modified
+
+const year = document.querySelector("#currentyear");
+
+const today = new Date();
+
+year.innerHTML = today.getFullYear()
+document.getElementById("last-modified").innerHTML = document.lastModified;

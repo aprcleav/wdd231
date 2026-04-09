@@ -4,6 +4,7 @@ import { displayTrailDetails } from "./modals.mjs";
 
 export function displayTrails(trails) {
     const trailGrid = document.querySelector("#trail-grid");
+    trailGrid.innerHTML = "";
     trails.forEach((trail) => {
         let card = document.createElement("div");
         let img = document.createElement("img");
@@ -25,9 +26,6 @@ export function displayTrails(trails) {
         });
 
         trailGrid.appendChild(card);
-
-
-
 
     })
 }
