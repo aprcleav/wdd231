@@ -5,11 +5,6 @@
         }
 
     /* ----- Main ----- */
-    .hero-text {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -120%);
-    }
 
     .hero-text p {
         padding: .5rem;

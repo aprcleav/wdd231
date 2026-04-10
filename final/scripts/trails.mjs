@@ -43,3 +43,17 @@ async function getTrailData(){
 }
 
 getTrailData();
+
+// ToDo: Fix local storage & display message
+const now = Date.now();
+const lastVisit = localStorage.getItem("lastVisit");
+const message = document.querySelector("#display-message");
+
+if (!localStorage.getItem('hideContactPrompt')) {
+    message.innerHTML = `<p>Welcome! Don't hesitate to if you have any questions: <a href="contact.html">Send a Message</a></p>`;
+} else {
+    localStorage.setItem("returning")
+}
+
+
+localStorage.setItem(lastVisit, now);

@@ -1,3 +1,23 @@
+@keyframes shiftDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(3px);
+    }
+}
+
+@keyframes shiftUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-5px);
+    }
+}
+
 @media only screen and (min-width: 600px) {
     /* ----- Header ----- */
 
@@ -30,15 +50,6 @@
     }
 
     /* ----- Main ----- */
-    @keyframes shiftDown {
-        from {
-            transform: translateY(0);
-        }
-
-        to {
-            transform: translateY(3px);
-        }
-    }
     button {
         background-color: var(--light-green);
         color: var(--typeface-color);
@@ -49,7 +60,7 @@
         color: var(--background-color);
         animation: shiftDown .1s ease-out forwards;
     }
-    
+
     .bio,
     .top-trails,
     .newsletter {
@@ -61,19 +72,20 @@
 
     .hero {
         background: black;
-        height: 100%;
+        position: relative;
+        width: 100%;
     }
 
     .hero img {
         opacity: 0.5;
-        position: relative;
     }
 
     .hero-text {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -170%);
+        width: 500px;
+        transform: translate(-50%, -50%);
         color: var(--background-color);
         text-align: center;
         background-color: transparent;
@@ -117,17 +129,10 @@
         margin-left: 1.5rem;
     }
 
-    @keyframes shiftUp {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(-5px);
-        }
-    }
     .card {
         cursor: pointer;
     }
+
     .card:hover {
         animation: shiftUp .2s ease-out forwards;
     }
@@ -156,7 +161,22 @@
         background-color: var(--typeface-color);
         color: var(--background-color);
     }
+
     .trail-buttons button:hover {
         background-color: var(--green-color);
     }
+
+    /* ----- Contact Page ----- */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact-grid h1 {
+        grid-column: 1/-1;;
+    }
+
+    input[type="submit"]:hover {
+        animation: shiftDown .1s ease-out forwards;
+    }
+
 }

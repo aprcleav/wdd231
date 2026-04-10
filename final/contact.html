@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/nav-footer.js" defer></script>
-    <script src="scripts/trails.mjs" type="module"></script>
 </head>
 
 <body>
@@ -40,7 +39,49 @@
     </header>
     <main>
         <h1>Contact</h1>
-        
+        <section class="contact-grid">
+            <form action="thanks.html" method="get">
+                <h2>Get in touch with Nancy.</h2>
+                <p>Have you hiked any of the trails listed on this site? I want to know how it went for you! Fill out this form to
+                    share your experience or ask a question.</p>
+                <br>
+                <p><span class="required"><em>Indicates required</em></span></p>
+                <br>
+            
+                <h3>Your Info</h3>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required autocomplete="name" title="Name">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required name="email" title="Email Address" placeholder="hello@email.com"
+                    autocomplete="email">
+            
+                <h3>Trail Info</h3>
+                <label for="trail-select">Trail in Question</label>
+                <select name="trail" id="trail-select">
+                    <option value="">--Please choose a trail--</option>
+                    <option value="Skyline Trail">Skyline Trail</option>
+                    <option value="Trail of Ten Falls">Trail of Ten Falls</option>
+                    <option value="Colchuck Lake">Colchuck Lake</option>
+                    <option value="Misery Ridge Loop">Misery Ridge Loop</option>
+                    <option value="Mount Storm King">Mount Storm King</option>
+                    <option value="Multnomah Falls & Wahkeena Loop">Multnomah Falls & Wahkeena Loop</option>
+                    <option value="Hall of Mosses">Hall of Mosses</option>
+                    <option value="Tamolitch Blue Pool">Tamolitch Blue Pool</option>
+                    <option value="Heather-Maple Pass Loop">Heather-Maple Pass Loop</option>
+                    <option value="Mirror Lake">Mirror Lake</option>
+                    <option value="Rattlesnake Ledge">Rattlesnake Ledge</option>
+                    <option value="Cape Flattery Trail">Cape Flattery Trail</option>
+                    <option value="South Sister">South Sister</option>
+                    <option value="Twin Falls">Twin Falls</option>
+                    <option value="God's Thumb">God's Thumb</option>
+                </select>
+                <label for="experience">Your Story</label>
+                <textarea id="experience" required name="experience" rows="6"
+                    placeholder="Ask a question or share your experience here..."></textarea>
+                <input type="submit" value="Send Message">
+            </form>
+            <img src="images/contact-page.png" alt="hiker in the mountains">
+        </section>
     </main>
     <footer>
         <div class="socials">
