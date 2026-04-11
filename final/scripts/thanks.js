@@ -7,8 +7,6 @@ const email = formInfo.get("email");
 const trail = formInfo.get("trail");
 const experience = formInfo.get("experience");
 
-const lastVisit = localStorage.getItem("lastVisit");
-
 document.querySelector("#results").innerHTML = `
 <p class="result-text">Your message has been sent. Please allow 24-48 hours for a reply.</p>
 <br>
@@ -19,4 +17,3 @@ document.querySelector("#results").innerHTML = `
 
 <br>
 `
-localStorage.setItem("lastVisit", now);
