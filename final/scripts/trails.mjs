@@ -44,16 +44,15 @@ async function getTrailData(){
 
 getTrailData();
 
-// ToDo: Fix local storage & display message
-const now = Date.now();
-const lastVisit = localStorage.getItem("lastVisit");
-const message = document.querySelector("#display-message");
+// Display welcome message & dismiss it when "X" is clicked
+const welcomeMessage = document.querySelector("#welcome-message");
+const dismiss = document.querySelector("#dismiss-banner");
 
-if (!localStorage.getItem('hideContactPrompt')) {
-    message.innerHTML = `<p>Welcome! Don't hesitate to if you have any questions: <a href="contact.html">Send a Message</a></p>`;
-} else {
-    localStorage.setItem("returning")
+if (localStorage.getItem("hideWelcome") === "true") {
+    welcomeMessage.classList.add("hidden");
 }
 
-
-localStorage.setItem(lastVisit, now);
+dismiss.addEventListener("click", () => {
+    welcomeMessage.classList.add("hidden");
+    localStorage.setItem("hideWelcome", "true");
+})

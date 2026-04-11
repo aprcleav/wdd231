@@ -297,6 +297,40 @@ button:hover, .button:hover {
     margin: .5rem;
 }
 
+.welcome-banner {
+    background-color: var(--light-green);
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 50px;
+    place-items: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.welcome-banner span {
+    padding: 1rem;
+}
+
+.welcome-banner a {
+    color: var(--typeface-color);
+}
+
+#dismiss-banner {
+    background-color: transparent;
+    color: var(--typeface-color);
+    font-size: 30px;
+    padding: 0;
+}
+
+#dismiss-banner:hover {
+    animation: none;
+    color: var(--accent-color);
+}
+
+.hidden {
+    display: none;
+}
+
 /* ----- Contact Page ----- */
 form {
     padding: 0 1rem 1rem;

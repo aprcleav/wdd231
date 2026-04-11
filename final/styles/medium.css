@@ -18,6 +18,18 @@
     }
 }
 
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     /* ----- Header ----- */
 
@@ -169,6 +181,10 @@
 
     .trail-buttons button:hover {
         background-color: var(--green-color);
+    }
+
+    .welcome-banner {
+        animation: slideIn 1s forwards;
     }
 
     /* ----- Contact Page ----- */

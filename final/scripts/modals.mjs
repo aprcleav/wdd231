@@ -1,3 +1,5 @@
+// Populate modal with additional trail info
+
 export function displayTrailDetails(trail) {
     const trailDetails = document.querySelector("#trail-details");
     trailDetails.innerHTML = `
