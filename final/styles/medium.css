@@ -50,12 +50,12 @@
     }
 
     /* ----- Main ----- */
-    button {
+    button, .button {
         background-color: var(--light-green);
         color: var(--typeface-color);
     }
 
-    button:hover {
+    button:hover, .button:hover {
         background-color: var(--green-color);
         color: var(--background-color);
         animation: shiftDown .1s ease-out forwards;
@@ -74,6 +74,7 @@
         background: black;
         position: relative;
         width: 100%;
+        color: var(--background-color);
     }
 
     .hero img {
@@ -86,7 +87,6 @@
         left: 50%;
         width: 500px;
         transform: translate(-50%, -50%);
-        color: var(--background-color);
         text-align: center;
         background-color: transparent;
     }
@@ -109,7 +109,7 @@
     }
 
     .bio img {
-        max-width: 300px;
+        max-width: 200px;
     }
 
     .newsletter {
@@ -137,7 +137,7 @@
         animation: shiftUp .2s ease-out forwards;
     }
 
-    #trail-details:modal {
+    #trail-details {
         display: grid;
         grid-gap: 1rem;
         grid-template-columns: 300px 1fr;
@@ -145,6 +145,11 @@
             "img text";
         place-items: center;
         width: 800px;
+    }
+
+    /* Closes the modal because grid layout interferes with normal functionality */
+    #trail-details:not([open]) {
+    display: none;
     }
 
     #trail-details button {

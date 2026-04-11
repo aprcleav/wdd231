@@ -101,8 +101,7 @@ wdd.addEventListener("click", () => {
 });
 
 // Creates and populates cards
-function createCourseCard(filteredCourses)
-{
+function createCourseCard(filteredCourses) {
     const courseGrid = document.querySelector(".course-grid");
 
     courseGrid.innerHTML = "";
@@ -112,7 +111,7 @@ function createCourseCard(filteredCourses)
         let subject = document.createElement("p");
         let number = document.createElement("p");
         let completed = document.createElement("p");
-        
+
         subject.textContent = course.subject;
         number.textContent = course.number;
 
@@ -124,7 +123,7 @@ function createCourseCard(filteredCourses)
             completed.textContent = "";
             card.setAttribute("class", "card incomplete");
         }
-        
+
         card.appendChild(completed);
         card.appendChild(subject);
         card.appendChild(number);

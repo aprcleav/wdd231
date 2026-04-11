@@ -134,7 +134,7 @@ h3 {
 
 /* ----- Main ----- */
 main {
-    max-width: 1200px;
+    max-width: 1000px;
     display: block;
     margin: auto;
 }
@@ -158,7 +158,7 @@ main img {
     background-color: var(--light-green);
 }
 
-button {
+button, .button {
     display: block;
     background-color: var(--typeface-color);
     border-radius: 10px;
@@ -169,8 +169,12 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, .button:hover {
     background-color: var(--green-color);
+}
+
+.button {
+    width: 150px;
 }
 
 .hero a{
@@ -244,6 +248,9 @@ button:hover {
     padding: 1rem;
     max-width: 300px;
 }
+::backdrop {
+    background-color: #0550163d;
+}
 
 #trail-details {
     border: none;
@@ -262,10 +269,6 @@ button:hover {
 
 #trail-details address, #trail-details p, #trail-details h3{
     padding: .5rem;
-}
-
-::backdrop {
-    background-color:#0550163d;
 }
 
 #closeModal {
