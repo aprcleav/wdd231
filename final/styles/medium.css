@@ -200,4 +200,17 @@
         animation: shiftDown .1s ease-out forwards;
     }
 
+    /* ----- Footer ----- */
+    footer {
+        text-align: left;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .socials img{
+        margin: 1rem .5rem;
+    }
+
 }
